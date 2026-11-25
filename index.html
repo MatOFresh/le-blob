@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Généré le 2026-11-25 21:20 à partir de src/ par tools/build.ps1 — ne pas modifier ce fichier directement -->
+<!-- Généré le 2026-11-25 21:28 à partir de src/ par tools/build.ps1 — ne pas modifier ce fichier directement -->
 <html lang="fr">
 <head>
 <meta charset="utf-8">
@@ -584,6 +584,10 @@ input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.12); }
   .more__body { display: block !important; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 11px; color: #666; word-break: break-all; }
 }
+.prompt-card { font-size: 16px; line-height: 1.6; color: var(--ink-2); border-left: 4px solid var(--gold); }
+.prompt-card p { margin: 0 0 12px; }
+.prompt-card ul { margin: 0 0 14px; padding-left: 22px; }
+.prompt-card li + li { margin-top: 6px; }
 
 </style>
 </head>
@@ -1144,7 +1148,42 @@ input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.12); }
     <ol class="biblio" id="biblio"></ol>
     <div class="callout callout--gray" style="margin-top:40px">
       <svg><use href="#i-info"/></svg>
-      <p><b>Nature des contenus.</b> « Photo réelle » et « vidéo réelle » : notre expérience. « Illustration » : animations pour expliquer, pas des observations. « Données simulées » : valeurs provisoires, en attente de nos mesures.</p>
+      <p><b>Nature des contenus.</b> « Photo réelle » et « vidéo réelle » : notre expérience. « Illustration » : animations pour expliquer, pas des observations. « Vidéo YouTube » : vidéo d'une autre source, citée dans la bibliographie.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     ANNEXE — RECHERCHE DOCUMENTAIRE
+     ===================================================================== -->
+<section id="prompt" class="chapter chapter--alt" data-title="Recherche documentaire" data-part="Annexes">
+  <div class="wrap wrap--narrow">
+    <div class="chapter__head">
+      <div class="eyebrow" data-reveal>Annexe</div>
+      <h2 class="h2" data-reveal style="--d:1">Recherche documentaire.</h2>
+      <p class="lead" data-reveal style="--d:2">Voici le prompt que nous avons donné à ChatGPT afin de trouver des informations supplémentaires.</p>
+    </div>
+    <div class="card prompt-card" data-reveal>
+      <p>Je réalise un projet d'enseignement scientifique sur le blob (<i>Physarum polycephalum</i>), avec pour problématique : « Comment l'intelligence et la mémoire du blob évoluent-elles en fonction de son environnement ? »</p>
+      <p>Afin de construire la partie théorique de ma présentation, je souhaite que tu effectues des recherches scientifiques sur cet organisme en abordant les points suivants :</p>
+      <ul>
+          <li>Son identité biologique, sa classification, son habitat naturel et ses particularités par rapport aux animaux, aux végétaux et aux champignons.</li>
+          <li>Sa structure cellulaire, le nombre de cellules et de noyaux qui le composent, sa taille maximale et sa capacité à se régénérer après fragmentation.</li>
+          <li>Son mode de déplacement, sa vitesse maximale et le fonctionnement de ses pseudopodes.</li>
+          <li>Son mode de reproduction et le nombre de types sexuels possibles.</li>
+          <li>Son fonctionnement interne, notamment l'organisation de son réseau de tubes, la circulation du cytoplasme et la fréquence de ses contractions.</li>
+          <li>Son mode de vie, son alimentation et l'influence des facteurs environnementaux tels que l'humidité, la lumière et les substances chimiques.</li>
+          <li>Sa capacité à entrer en dormance sous forme de sclérote et à se réactiver.</li>
+          <li>Ses capacités d'intelligence, d'apprentissage et de mémorisation malgré l'absence de cerveau et de système nerveux.</li>
+          <li>Le phénomène d'habituation à des substances répulsives, notamment la caféine, la quinine et le sel.</li>
+          <li>Les études scientifiques réalisées sur l'habituation du blob, notamment celle menée en 2016 par des chercheurs du CNRS de Toulouse. Détaille leur protocole, leurs observations, leurs résultats chiffrés et leurs conclusions.</li>
+          <li>La persistance de sa mémoire pendant la dormance, sa transmission par fusion entre individus et son évolution lorsque le stimulus disparaît.</li>
+      </ul>
+      <p>Pour chaque élément, fournis des explications scientifiques claires, accompagnées de données chiffrées précises lorsqu'elles sont disponibles.</p>
+      <p>Appuie-toi sur des publications scientifiques fiables et des sources institutionnelles reconnues. Indique systématiquement tes sources ainsi que les liens vers les publications originales.</p>
+      <p>Adapte le niveau des explications à un lycéen de première, en utilisant un vocabulaire scientifique accessible et en définissant les termes complexes.</p>
+      <p>Organise les informations en plusieurs parties thématiques afin que je puisse les exploiter pour construire une présentation pédagogique et interactive sur le blob.</p>
     </div>
   </div>
 </section>
